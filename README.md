@@ -7,7 +7,3 @@ screenshots, as well as being able to record gifs.
 - Record gifs.
 - Save the screenshots to a file, or copy them to the clipboard.
 - Integrated editor with many features, such as blur, pen, rotate, etc.
-
-## More information
-For more information and screenshots please refer to the
-[official website](http://lonamiwebs.github.io) and head to "Programs".

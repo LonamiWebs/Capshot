@@ -38,18 +38,22 @@ public static class Settings
     /// <summary>
     /// Should the settings be saved automatically?
     /// </summary>
-    public static bool Autosave { get; set; } = true;
+    public static bool Autosave { get; set; }
 
     /// <summary>
     /// Determines whether the .SetValue<T>(...) should be disabled or not. 
     /// Useful when loading a settings window
     /// </summary>
-    public static bool SetSettingDisabled { get; set; } = false;
+    public static bool SetSettingDisabled { get; set; }
 
     /// <summary>
     /// Retrieves the application folder
     /// </summary>
-    public static string ApplicationFolder => Path.GetDirectoryName(settingsFile);
+    public static string ApplicationFolder { get { return Path.GetDirectoryName(settingsFile); } }
+
+    static Settings() {
+        Autosave = true;
+    }
 
     #endregion
 
@@ -94,7 +98,7 @@ public static class Settings
     /// This is automatically called once after calling <seealso cref="Init">Settings.Init()</seealso>
     /// </summary>
     /// <returns>False if the settings file was corrupted</returns>
-    public static bool Load() => load(false);
+    public static bool Load() { return load(false); }
 
     /// <summary>
     /// Saves the settings. 
@@ -127,7 +131,7 @@ public static class Settings
     /// </summary>
     /// <param name="settingName">The name of the setting</param>
     /// <returns>The value of the setting</returns>
-    public static T GetValue<T>(string settingName) => (T)values[settingName];
+    public static T GetValue<T>(string settingName) { return (T)values[settingName]; }
 
     /// <summary>
     /// Tries to get a value for the given setting name. No exception will be thrown if the setting doesn't exist

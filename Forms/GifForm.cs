@@ -121,7 +121,7 @@ namespace Capshot
 
             timeL.Text = "Guardando...";
             var progress = new Progress<float>();
-            progress.ProgressChanged += (s, f) => timeL.Text = $"Guardando {f.ToString("P")}...";
+            progress.ProgressChanged += (s, f) => timeL.Text = String.Format("Guardando {0}...", f.ToString("P"));
             
             await EncodeGifBytes(frames, captureT.Interval, quality, repeat, location, progress);
             FreeFramesMemory(frames);

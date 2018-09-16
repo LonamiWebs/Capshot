@@ -15,14 +15,14 @@ namespace Capshot
             hexTB.Text = ColorTranslator.ToHtml(color);
         }
 
-        void copyRgbB_Click(object sender, EventArgs e) => copyClose(rgbTB.Text);
-        void copyHexB_Click(object sender, EventArgs e) => copyClose(hexTB.Text);
+        void copyRgbB_Click(object sender, EventArgs e) { copyClose(rgbTB.Text); }
+        void copyHexB_Click(object sender, EventArgs e) { copyClose(hexTB.Text); }
         void copyClose(string text)
         {
             Clipboard.SetText(text);
             Close();
         }
 
-        void textBox_Click(object sender, EventArgs e) => ((TextBox)sender).SelectAll();
+        void textBox_Click(object sender, EventArgs e) { ((TextBox)sender).SelectAll(); }
     }
 }

@@ -10,9 +10,9 @@ public partial class TimeSelector : UserControl
     #region Private fields and properties
 
     // minimum location of where the thumbs can be located in the control
-    int minLocation => 0;
+    int minLocation { get { return 0; } }
     // maximum location of where the thumbs can be located in the control
-    int maxLocation => Width - rightThumb.Width;
+    int maxLocation { get { return Width - rightThumb.Width; } }
 
     // determines which thumb is moving: -1, 0 or 1 (left, none or right)
     int thumbMoving;
@@ -149,7 +149,7 @@ public partial class TimeSelector : UserControl
     void checkMinimumDistance()
     {
         if (_Maximum - _Minimum < _MinimumDistance)
-            throw new ArgumentOutOfRangeException(nameof(MinimumDistance),
+            throw new ArgumentOutOfRangeException("MinimumDistance",
                 "The value can't be less than the distance between the maximum and the minimum");
 
         checkPushLeftThumb();
@@ -223,11 +223,11 @@ public partial class TimeSelector : UserControl
     }
 
     // moving related
-    void leftThumb_MouseDown(object sender, MouseEventArgs e) => enableMovingCheck(-1, e);
-    void rightThumb_MouseDown(object sender, MouseEventArgs e) => enableMovingCheck(1, e);
+    void leftThumb_MouseDown(object sender, MouseEventArgs e) { enableMovingCheck(-1, e); }
+	void rightThumb_MouseDown(object sender, MouseEventArgs e) { enableMovingCheck(1, e); }
 
-    void leftThumb_MouseUp(object sender, MouseEventArgs e) => disableMovingCheck(-1, e);
-    void rightThumb_MouseUp(object sender, MouseEventArgs e) => disableMovingCheck(1, e);
+	void leftThumb_MouseUp(object sender, MouseEventArgs e) { disableMovingCheck(-1, e); }
+	void rightThumb_MouseUp(object sender, MouseEventArgs e) { disableMovingCheck(1, e); }
 
     // update the current position
     void moveCheckTimer_Tick(object sender, EventArgs e)

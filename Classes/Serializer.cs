@@ -48,8 +48,9 @@ public static class Serializer
     /// <typeparam name="T">The type of the object to serialize</typeparam>
     /// <param name="obj">The object to serialize</param>
     /// <param name="file">The file where the object will be serialized</param>
-    public static void Serialize<T>(T obj, string file) =>
+    public static void Serialize<T>(T obj, string file) {
         File.WriteAllText(file, SerializeToString(obj), Encoding.UTF8);
+    }
 
     /// <summary>
     /// Serializes a given object into a string
@@ -79,8 +80,9 @@ public static class Serializer
     /// <typeparam name="T">The type of the object to deserialize</typeparam>
     /// <param name="file">The file from where the object will be deserialized</param>
     /// <returns>The deserialized object</returns>
-    public static T Deserialize<T>(string file) =>
-        DeserializeFromString<T>(File.ReadAllText(file, Encoding.UTF8));
+    public static T Deserialize<T>(string file) {
+        return DeserializeFromString<T>(File.ReadAllText(file, Encoding.UTF8));
+    }
 
     /// <summary>
     /// Deserializes an object from a given XML string

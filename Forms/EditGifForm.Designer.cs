@@ -73,7 +73,7 @@
             this.saveTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveTSB.Name = "saveTSB";
             this.saveTSB.Size = new System.Drawing.Size(28, 28);
-            this.saveTSB.ToolTipText = "Guardar automáticamente (Ctrl+S)";
+            this.saveTSB.ToolTipText = "Save (Ctrl+S)";
             this.saveTSB.Click += new System.EventHandler(this.saveTSB_Click);
             // 
             // saveAsTSB
@@ -83,7 +83,7 @@
             this.saveAsTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveAsTSB.Name = "saveAsTSB";
             this.saveAsTSB.Size = new System.Drawing.Size(28, 28);
-            this.saveAsTSB.ToolTipText = "Guardar en un directorio elegido (Ctrl+Shift+S)";
+            this.saveAsTSB.ToolTipText = "Save as (Ctrl+Shift+S)";
             this.saveAsTSB.Click += new System.EventHandler(this.saveAsTSB_Click);
             // 
             // toolStripSeparator1
@@ -95,7 +95,7 @@
             // 
             this.timeLabel.Name = "timeLabel";
             this.timeLabel.Size = new System.Drawing.Size(113, 28);
-            this.timeLabel.Text = "Intervalo de tiempo:";
+            this.timeLabel.Text = "Time interval:";
             // 
             // timeSelector
             // 
@@ -204,7 +204,7 @@
             this.Controls.Add(this.pictureBox);
             this.KeyPreview = true;
             this.Name = "EditGifForm";
-            this.Text = "Editar gif";
+            this.Text = "Edit gif";
             this.Load += new System.EventHandler(this.EditGifForm_Load);
             this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.EditForm_PreviewKeyDown);
             this.actionsTS.ResumeLayout(false);

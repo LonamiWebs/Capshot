@@ -90,7 +90,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GifForm";
             this.ShowInTaskbar = false;
-            this.Text = "GifForm";
+            this.Text = "Gif";
             this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.White;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -54,7 +54,7 @@
             this.beforeL.Name = "beforeL";
             this.beforeL.Size = new System.Drawing.Size(40, 13);
             this.beforeL.TabIndex = 1;
-            this.beforeL.Text = "Antes: ";
+            this.beforeL.Text = "Before: ";
             // 
             // widthL
             // 
@@ -63,7 +63,7 @@
             this.widthL.Name = "widthL";
             this.widthL.Size = new System.Drawing.Size(41, 13);
             this.widthL.TabIndex = 2;
-            this.widthL.Text = "Ancho:";
+            this.widthL.Text = "Width:";
             // 
             // heightL
             // 
@@ -72,7 +72,7 @@
             this.heightL.Name = "heightL";
             this.heightL.Size = new System.Drawing.Size(28, 13);
             this.heightL.TabIndex = 3;
-            this.heightL.Text = "Alto:";
+            this.heightL.Text = "Height:";
             // 
             // heightTB
             // 
@@ -93,7 +93,7 @@
             this.cancelB.Name = "cancelB";
             this.cancelB.Size = new System.Drawing.Size(110, 30);
             this.cancelB.TabIndex = 5;
-            this.cancelB.Text = "Cancelar";
+            this.cancelB.Text = "Cancel";
             this.cancelB.UseVisualStyleBackColor = true;
             this.cancelB.Click += new System.EventHandler(this.cancelB_Click);
             // 
@@ -105,7 +105,7 @@
             this.acceptB.Name = "acceptB";
             this.acceptB.Size = new System.Drawing.Size(110, 30);
             this.acceptB.TabIndex = 6;
-            this.acceptB.Text = "Aceptar";
+            this.acceptB.Text = "Accept";
             this.acceptB.UseVisualStyleBackColor = true;
             this.acceptB.Click += new System.EventHandler(this.acceptB_Click);
             // 
@@ -124,7 +124,7 @@
             this.Controls.Add(this.widthTB);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ResizeForm";
-            this.Text = "Cambiar tamaño";
+            this.Text = "Change size";
             this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -20,14 +20,14 @@ namespace Capshot
         int selectedSize = 0;
 
         // I honestly hate using .resx files...
-        const string startingCapshotLText = @"¡Bienvenido a Capshot! Capshot es un sencillo programa que te permite capturar áreas específicas de tu pantalla, así como gifs animados.
-Capshot integra un editor para que puedas ocultar o resaltar partes de tus capturas.
-Para seleccionar una región, presiona la tecla Impr Pant en tu teclado. Ctrl+Impr Pant capturará toda la pantalla, Alt+Impr Pant la ventana activa, y Shift+Impr Pant capturará un gif animado.
+        const string startingCapshotLText = @"Welcome to Capshot! Capshot is a simple program that will allow you to take screenshots and gifs.
+Capshot has a builtin editor to hide or highlight parts of your screenshots.
+To select a region, press Print Screen in your keyboard. Ctrl+Print Screen will capture the entire screen, Alt+Print Screen the active window, and Shift+Print Screen will record an animated gif.
 
-Si todavía tienes dudas, visita la página web del autor. ¡Es un tío majo y te las aclarará todas!";
-        const string editorLText = @"Para elegir un color de la paleta en el editor, mantén pulsado el ratón sobre la herramienta durante un tercio de segundo.
+If you still have questions, visit author's website. He's a nice dude and will be glad to help!";
+        const string editorLText = @"To select a colour from the editor's palette, hold the mouse in the tool for a third of a second.
 
-Para cambiar el tamaño desde el editor selecciona una herramienta y pulsa Ctrl++ o Ctrl+-, o utiliza la rueda del ratón.";
+To change the size of a tool from within the editor, press Ctrl++ o Ctrl+-, or use the mouse wheel.";
 
         #endregion
 
@@ -63,23 +63,23 @@ Para cambiar el tamaño desde el editor selecciona una herramienta y pulsa Ctrl+
             for (int i = 0; i < 5; i++)
                 panels[i].Visible = i == menuListBox.SelectedIndex;
 
-            Text = "Ajustes avanzados - ";
+            Text = "Advanced settings - ";
             switch (menuListBox.SelectedIndex)
             {
                 case 0:
-                    Text += "Ayuda";
+                    Text += "Help";
                     break;
                 case 1:
-                    Text += "Opciones del editor";
+                    Text += "Editor settings";
                     break;
                 case 2:
-                    Text += "Ajustes del autoguardado";
+                    Text += "Autosave settings";
                     break;
                 case 3:
-                    Text += "Ajustes del inicio";
+                    Text += "Startup settings";
                     break;
                 case 4:
-                    Text += "Ajustes del GIF";
+                    Text += "GIF settings";
                     break;
             }
         }
@@ -122,8 +122,8 @@ Para cambiar el tamaño desde el editor selecciona una herramienta y pulsa Ctrl+
             }
             catch
             {
-                MessageBox.Show("Hubo un problema al cargar los ajustes por lo que serán reiniciados",
-                    "Ajustes corruptos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("There was a problem loading settings so they will be reset",
+                    "Corrupt settings", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 RestartSettings();
             }
         }
@@ -141,7 +141,7 @@ Para cambiar el tamaño desde el editor selecciona una herramienta y pulsa Ctrl+
 
             LoadSettings();
 
-            MessageBox.Show("Se han reiniciado los ajustes", "Ajustes reiniciados",
+            MessageBox.Show("The settings were reset", "Settings reset",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -395,35 +395,35 @@ Para cambiar el tamaño desde el editor selecciona una herramienta y pulsa Ctrl+
 
         void autosaveFormatLL_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show(@"Puedes personalizar con el formato que se guardan las capturas. Por defecto tienen el siguiente formato:
-'Captura {dia}-{mes}-{año}_{hora}-{minuto}-{segundo}'
-Los campos encapsulados entre corchete se reemplazarán por el día, mes, etc. actual.
+            MessageBox.Show(@"You can customize the format in which screenshots are saved. By default they have the following format:
+'Screenshot_{day}-{month}-{year}_{hour}-{minute}-{second}'
+The fields between braces will be replaced with the current day, month, etc.
 
-Otros ejemplo válido sería:
-'Captura tomada un {nombredia} de {nombremes}'
-Dará como resultado (por ejemplo) 'Captura tomada un martes de junio'",
+Another valid example is:
+'Screenshot taken a {dayname} of {daymonth}'
+Will for example show 'Screenshot taken a Tuesday of June'",
 
-"Ayuda sobre el formato (1/2)", MessageBoxButtons.OK, MessageBoxIcon.Information);
+"Format help (1/2)", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            MessageBox.Show(@"Los campos válidos son los siguientes:
+            MessageBox.Show(@"Valid fields are:
 
-{dia} - Se reemplazará por el día actual en formato numérico (p.ej. 17)
-{nombredia} - Se reemplazará por el día actual (p.ej. lunes)
-{mes} - Se reemplazará por el mes actual en formato numérico (p.ej. 4)
-{nombremes} - Se reemplazará por el mes actual (p.ej. febrero)
-{año} - Se reemplazará por el año actual (p.ej. 2015)
-{hora} - Se reemplazará por la hora actual (p.ej. 13)
-{minuto} - Se reemplazará por el minuto actual (p.ej. 47)
-{segundo} - Se reemplazará por el segundo actual (p.ej. 02)",
+{day} - Current day as a number (e.g. 17)
+{dayname} - Current day name (e.g. lunes)
+{month} - Current month as a number (e.g. 4)
+{monthname} - Current month name (e.g. febrero)
+{year} - Current year (e.g. 2015)
+{hour} - Current hour (e.g. 13)
+{minute} - Current minute (e.g. 47)
+{second} - Current second (e.g. 02)",
 
-"Ayuda sobre el formato (2/2)", MessageBoxButtons.OK, MessageBoxIcon.Information);
+"Format help (2/2)", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         void gifRepeatLL_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show("Si ajustas las repeticiones a 0, el gif se repetirá indefinidamente. " +
-                "Si por el contrario ajustas un número específico, el gif se repetirá ese número de veces " +
-                "(nótese que igual el resto de programas ignoran esto)", "Ayuda sobre los GIFs");
+            MessageBox.Show("If you set the repetitions to 0, gif will repeat forever. " +
+                "If you set a non-zero number, gif will repeat those many times " +
+                "(note that programs are free to ignore this)", "GIFs help");
         }
 
         #endregion

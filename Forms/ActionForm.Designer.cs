@@ -116,7 +116,7 @@
             this.Name = "ActionForm";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Acciones";
+            this.Text = "Actions";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.ActionForm_Load);
             this.flowLayoutPanel.ResumeLayout(false);

@@ -72,7 +72,7 @@
             this.fontL.Name = "fontL";
             this.fontL.Size = new System.Drawing.Size(52, 16);
             this.fontL.TabIndex = 2;
-            this.fontL.Text = "Fuente:";
+            this.fontL.Text = "Font:";
             // 
             // textL
             // 
@@ -82,7 +82,7 @@
             this.textL.Name = "textL";
             this.textL.Size = new System.Drawing.Size(45, 16);
             this.textL.TabIndex = 3;
-            this.textL.Text = "Texto:";
+            this.textL.Text = "Text:";
             // 
             // cancelB
             // 
@@ -94,7 +94,7 @@
             this.cancelB.Name = "cancelB";
             this.cancelB.Size = new System.Drawing.Size(100, 49);
             this.cancelB.TabIndex = 4;
-            this.cancelB.Text = "Cancelar";
+            this.cancelB.Text = "Cancel";
             this.cancelB.UseVisualStyleBackColor = true;
             this.cancelB.Click += new System.EventHandler(this.cancelB_Click);
             // 
@@ -108,7 +108,7 @@
             this.acceptB.Name = "acceptB";
             this.acceptB.Size = new System.Drawing.Size(100, 49);
             this.acceptB.TabIndex = 5;
-            this.acceptB.Text = "Aceptar";
+            this.acceptB.Text = "Accept";
             this.acceptB.UseVisualStyleBackColor = true;
             this.acceptB.Click += new System.EventHandler(this.acceptB_Click);
             // 
@@ -128,7 +128,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(450, 270);
             this.Name = "TextForm";
-            this.Text = "Añadir texto";
+            this.Text = "Add text";
             this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();

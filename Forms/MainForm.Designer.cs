@@ -98,7 +98,7 @@
             this.destinationL.Name = "destinationL";
             this.destinationL.Size = new System.Drawing.Size(57, 16);
             this.destinationL.TabIndex = 4;
-            this.destinationL.Text = "Destino:";
+            this.destinationL.Text = "Destination:";
             // 
             // editCB
             // 
@@ -117,9 +117,9 @@
             // notifyIcon
             // 
             this.notifyIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.notifyIcon.BalloonTipText = "Capshot se quedará minimizado en la bandeja del sistema\r\nPara salir, haz clic der" +
-    "echo el icono de la bandeja del sistema";
-            this.notifyIcon.BalloonTipTitle = "Capshot está en ejecución";
+            this.notifyIcon.BalloonTipText = "Capshot will remain in the system tray\r\nTo exit, right click " +
+    "in the system tray's icon";
+            this.notifyIcon.BalloonTipTitle = "Capshot is running";
             this.notifyIcon.ContextMenuStrip = this.notifyCMS;
             this.notifyIcon.Text = "Capshot";
             this.notifyIcon.Visible = true;
@@ -138,7 +138,7 @@
             this.settingsTSMI.Image = global::Capshot.Properties.Resources.icon;
             this.settingsTSMI.Name = "settingsTSMI";
             this.settingsTSMI.Size = new System.Drawing.Size(112, 22);
-            this.settingsTSMI.Text = "Ajustes";
+            this.settingsTSMI.Text = "Settings";
             this.settingsTSMI.Click += new System.EventHandler(this.settingsTSMI_Click);
             // 
             // closeTSMI
@@ -146,7 +146,7 @@
             this.closeTSMI.Image = global::Capshot.Properties.Resources.clear;
             this.closeTSMI.Name = "closeTSMI";
             this.closeTSMI.Size = new System.Drawing.Size(112, 22);
-            this.closeTSMI.Text = "Cerrar";
+            this.closeTSMI.Text = "Close";
             this.closeTSMI.Click += new System.EventHandler(this.closeTSMI_Click);
             // 
             // captureCursorCB
@@ -157,7 +157,7 @@
             this.captureCursorCB.Name = "captureCursorCB";
             this.captureCursorCB.Size = new System.Drawing.Size(115, 20);
             this.captureCursorCB.TabIndex = 17;
-            this.captureCursorCB.Text = "Capturar cursor";
+            this.captureCursorCB.Text = "Capture mouse";
             this.captureCursorCB.UseVisualStyleBackColor = true;
             this.captureCursorCB.CheckedChanged += new System.EventHandler(this.captureCursorCB_CheckedChanged);
             // 
@@ -170,7 +170,7 @@
             this.advancedSettingsB.Name = "advancedSettingsB";
             this.advancedSettingsB.Size = new System.Drawing.Size(177, 41);
             this.advancedSettingsB.TabIndex = 19;
-            this.advancedSettingsB.Text = "Ajustes avanzados";
+            this.advancedSettingsB.Text = "Advanced settings";
             this.advancedSettingsB.UseVisualStyleBackColor = true;
             this.advancedSettingsB.Click += new System.EventHandler(this.advancedSettingsB_Click);
             // 
@@ -183,7 +183,7 @@
             this.minimizeB.Name = "minimizeB";
             this.minimizeB.Size = new System.Drawing.Size(177, 41);
             this.minimizeB.TabIndex = 20;
-            this.minimizeB.Text = "Minimizar Capshot";
+            this.minimizeB.Text = "Minimize Capshot";
             this.minimizeB.UseVisualStyleBackColor = true;
             this.minimizeB.Click += new System.EventHandler(this.minimizeB_Click);
             // 
@@ -194,7 +194,7 @@
             this.delayL.Name = "delayL";
             this.delayL.Size = new System.Drawing.Size(148, 16);
             this.delayL.TabIndex = 21;
-            this.delayL.Text = "Retraso (en segundos):";
+            this.delayL.Text = "Delay (in seconds):";
             // 
             // delayNUD
             // 

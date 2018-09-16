@@ -24,16 +24,16 @@ namespace Capshot
         // Testing EditForm
         public EditForm()
         {
-            MessageBox.Show(@"A continuación podrás probar el editor de Capshot.
+            MessageBox.Show(@"You're about to try Capshot's editor.
 
 
-El editor de Capshot es útil para resaltar cosas, dibujar anotaciones, o pixelar y desenfocar cosas que no quieres que aparezcan (como un número de teléfono o una contraseña).
+Capshot's editor is useful to highlight things, draw notes, or pixelate and blur things to hide (such as phone numbers or passwords).
 
-· Para desplazar la imagen, haz clic derecho (o central) y arrastra la imagen.
-· Puedes deshacer y rehacer tantas veces como quieras, cambiar el tamaño, rotar la captura... Todos los pasos anteriores también se verán afectados.
+· To move the image, use right (or middle) click and drag the image.
+· You can undo and redo infinitely, resize the image, rotate the screenshot...
 
-¡Si aún tienes dudas no dudes en visitar la página del autor y ponerte en contacto con él!",
-                "Bienvenido al editor de Capshot", MessageBoxButtons.OK, MessageBoxIcon.Information);
+If you still have questions, don't think twice before visiting author's website to ask him!",
+                "Welcome to Capshot's editor", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             BeginInit();
 
@@ -199,20 +199,20 @@ El editor de Capshot es útil para resaltar cosas, dibujar anotaciones, o pixela
         void clipboardTSB_Click(object sender, EventArgs e)
         {
             ActionForm.PerformAction(editControl.GetFinalResult(), ActionForm.Action.Clipboard);
-            Text = "Copiado al portapapeles";
+            Text = "Copied to clipboard";
             infoTimer.Enabled = false; infoTimer.Enabled = true;
         }
 
         void saveTSB_Click(object sender, EventArgs e)
         {
-            Text = "Archivo guardado en " +
+            Text = "File saved to " +
                 ActionForm.PerformAction(editControl.GetFinalResult(), ActionForm.Action.Save); ;
             infoTimer.Enabled = false; infoTimer.Enabled = true;
         }
 
         void saveAsTSB_Click(object sender, EventArgs e)
         {
-            Text = "Guardando archivo...";
+            Text = "Saving file...";
             Text = ActionForm.PerformAction(editControl.GetFinalResult(), ActionForm.Action.SaveAs);
             infoTimer.Enabled = false; infoTimer.Enabled = true;
         }

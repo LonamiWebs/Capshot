@@ -113,7 +113,7 @@
             this.restartSettingsB.Name = "restartSettingsB";
             this.restartSettingsB.Size = new System.Drawing.Size(178, 41);
             this.restartSettingsB.TabIndex = 14;
-            this.restartSettingsB.Text = "Reiniciar ajustes";
+            this.restartSettingsB.Text = "Reset settings";
             this.restartSettingsB.UseVisualStyleBackColor = true;
             this.restartSettingsB.Click += new System.EventHandler(this.restartSettingsB_Click);
             // 
@@ -127,7 +127,7 @@
             this.visitWebB.Name = "visitWebB";
             this.visitWebB.Size = new System.Drawing.Size(200, 41);
             this.visitWebB.TabIndex = 16;
-            this.visitWebB.Text = "Visitar página web del autor";
+            this.visitWebB.Text = "Visit author's website";
             this.visitWebB.UseVisualStyleBackColor = true;
             this.visitWebB.Click += new System.EventHandler(this.visitWebB_Click);
             // 
@@ -170,7 +170,7 @@
             this.autosaveFormatL.Name = "autosaveFormatL";
             this.autosaveFormatL.Size = new System.Drawing.Size(154, 16);
             this.autosaveFormatL.TabIndex = 22;
-            this.autosaveFormatL.Text = "Con el siguiente formato:";
+            this.autosaveFormatL.Text = "With the following format:";
             // 
             // autosaveFormatTB
             // 
@@ -193,7 +193,7 @@
             this.autosaveFolderL.Name = "autosaveFolderL";
             this.autosaveFolderL.Size = new System.Drawing.Size(195, 16);
             this.autosaveFolderL.TabIndex = 20;
-            this.autosaveFolderL.Text = "Guardar en la siguiente carpeta";
+            this.autosaveFolderL.Text = "Save in the following folder";
             // 
             // autosaveFolderTB
             // 
@@ -219,7 +219,7 @@
             this.startMinimizedCB.Name = "startMinimizedCB";
             this.startMinimizedCB.Size = new System.Drawing.Size(199, 20);
             this.startMinimizedCB.TabIndex = 26;
-            this.startMinimizedCB.Text = "Abrir el programa minimizado";
+            this.startMinimizedCB.Text = "Start the program minified";
             this.startMinimizedCB.UseVisualStyleBackColor = true;
             this.startMinimizedCB.CheckedChanged += new System.EventHandler(this.startMinimizedCB_CheckedChanged);
             // 
@@ -234,7 +234,7 @@
             this.windowsStartupCB.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.windowsStartupCB.Size = new System.Drawing.Size(142, 20);
             this.windowsStartupCB.TabIndex = 25;
-            this.windowsStartupCB.Text = "Iniciar con Windows";
+            this.windowsStartupCB.Text = "Start on boot";
             this.windowsStartupCB.UseVisualStyleBackColor = true;
             this.windowsStartupCB.CheckedChanged += new System.EventHandler(this.windowsStartupCB_CheckedChanged);
             // 
@@ -251,7 +251,7 @@
             this.autosaveP.Name = "autosaveP";
             this.autosaveP.Size = new System.Drawing.Size(404, 132);
             this.autosaveP.TabIndex = 28;
-            this.autosaveP.Text = "Ajustes del guardado automático";
+            this.autosaveP.Text = "Autosave settings";
             this.autosaveP.Visible = false;
             // 
             // autosaveFormatLL
@@ -273,7 +273,7 @@
             this.startupP.Name = "startupP";
             this.startupP.Size = new System.Drawing.Size(404, 27);
             this.startupP.TabIndex = 29;
-            this.startupP.Text = "Inicio del programa";
+            this.startupP.Text = "Program startup";
             this.startupP.Visible = false;
             // 
             // editorOptionsP
@@ -296,7 +296,7 @@
             this.editorOptionsP.Name = "editorOptionsP";
             this.editorOptionsP.Size = new System.Drawing.Size(404, 280);
             this.editorOptionsP.TabIndex = 30;
-            this.editorOptionsP.Text = "Opciones del editor";
+            this.editorOptionsP.Text = "Editor settings";
             this.editorOptionsP.Visible = false;
             // 
             // blurSizeNUD
@@ -352,7 +352,7 @@
             this.blurSizeL.Name = "blurSizeL";
             this.blurSizeL.Size = new System.Drawing.Size(159, 16);
             this.blurSizeL.TabIndex = 32;
-            this.blurSizeL.Text = "Tamaño del desenfoque:";
+            this.blurSizeL.Text = "Blur size:";
             // 
             // pixelateSizeL
             // 
@@ -361,7 +361,7 @@
             this.pixelateSizeL.Name = "pixelateSizeL";
             this.pixelateSizeL.Size = new System.Drawing.Size(139, 16);
             this.pixelateSizeL.TabIndex = 31;
-            this.pixelateSizeL.Text = "Tamaño del pixelado:";
+            this.pixelateSizeL.Text = "Pixelate size:";
             // 
             // eraserSizeNUD
             // 
@@ -430,7 +430,7 @@
             this.eraserSizeL.Name = "eraserSizeL";
             this.eraserSizeL.Size = new System.Drawing.Size(139, 16);
             this.eraserSizeL.TabIndex = 27;
-            this.eraserSizeL.Text = "Tamaño del borrador:";
+            this.eraserSizeL.Text = "Eraser size:";
             // 
             // markerSizeL
             // 
@@ -439,7 +439,7 @@
             this.markerSizeL.Name = "markerSizeL";
             this.markerSizeL.Size = new System.Drawing.Size(145, 16);
             this.markerSizeL.TabIndex = 26;
-            this.markerSizeL.Text = "Tamaño del marcador:";
+            this.markerSizeL.Text = "Marker size:";
             // 
             // paletteP
             // 
@@ -573,7 +573,7 @@
             this.penSizeL.Name = "penSizeL";
             this.penSizeL.Size = new System.Drawing.Size(140, 16);
             this.penSizeL.TabIndex = 1;
-            this.penSizeL.Text = "Tamaño del bolígrafo:";
+            this.penSizeL.Text = "Pen size:";
             // 
             // coloursPaletteL
             // 
@@ -582,7 +582,7 @@
             this.coloursPaletteL.Name = "coloursPaletteL";
             this.coloursPaletteL.Size = new System.Drawing.Size(117, 16);
             this.coloursPaletteL.TabIndex = 0;
-            this.coloursPaletteL.Text = "Paleta de colores:";
+            this.coloursPaletteL.Text = "Colour palette:";
             // 
             // editorL
             // 
@@ -620,7 +620,7 @@
             this.helpP.Name = "helpP";
             this.helpP.Size = new System.Drawing.Size(404, 348);
             this.helpP.TabIndex = 30;
-            this.helpP.Text = "Opciones del GIF";
+            this.helpP.Text = "GIF options";
             this.helpP.Visible = false;
             // 
             // startingCapshotTL
@@ -632,7 +632,7 @@
             this.startingCapshotTL.Name = "startingCapshotTL";
             this.startingCapshotTL.Size = new System.Drawing.Size(401, 21);
             this.startingCapshotTL.TabIndex = 35;
-            this.startingCapshotTL.Text = "Comenzando con Capshot";
+            this.startingCapshotTL.Text = "Getting started";
             // 
             // startingCapshotL
             // 
@@ -652,7 +652,7 @@
             this.editorTL.Name = "editorTL";
             this.editorTL.Size = new System.Drawing.Size(398, 21);
             this.editorTL.TabIndex = 33;
-            this.editorTL.Text = "Sobre el editor";
+            this.editorTL.Text = "About the editor";
             // 
             // gifOptionsP
             // 
@@ -669,7 +669,7 @@
             this.gifOptionsP.Name = "gifOptionsP";
             this.gifOptionsP.Size = new System.Drawing.Size(404, 96);
             this.gifOptionsP.TabIndex = 29;
-            this.gifOptionsP.Text = "Opciones del GIF";
+            this.gifOptionsP.Text = "GIF options";
             this.gifOptionsP.Visible = false;
             // 
             // gifMaxTimeNUD
@@ -777,7 +777,7 @@
             this.gifMaxTimeL.Name = "gifMaxTimeL";
             this.gifMaxTimeL.Size = new System.Drawing.Size(202, 16);
             this.gifMaxTimeL.TabIndex = 3;
-            this.gifMaxTimeL.Text = "Máxima duración (en segundos):";
+            this.gifMaxTimeL.Text = "Maximum duration (in seconds):";
             // 
             // gifRepeatL
             // 
@@ -786,7 +786,7 @@
             this.gifRepeatL.Name = "gifRepeatL";
             this.gifRepeatL.Size = new System.Drawing.Size(83, 16);
             this.gifRepeatL.TabIndex = 2;
-            this.gifRepeatL.Text = "¿Repetir gif?";
+            this.gifRepeatL.Text = "Repeat gif?";
             // 
             // gifQualityL
             // 
@@ -795,7 +795,7 @@
             this.gifQualityL.Name = "gifQualityL";
             this.gifQualityL.Size = new System.Drawing.Size(58, 16);
             this.gifQualityL.TabIndex = 1;
-            this.gifQualityL.Text = "Calidad:";
+            this.gifQualityL.Text = "Quality:";
             // 
             // gifFpsL
             // 
@@ -830,7 +830,7 @@
             this.tryEditorB.Name = "tryEditorB";
             this.tryEditorB.Size = new System.Drawing.Size(121, 41);
             this.tryEditorB.TabIndex = 33;
-            this.tryEditorB.Text = "Probar editor";
+            this.tryEditorB.Text = "Try editor";
             this.tryEditorB.Click += new System.EventHandler(this.tryEditorB_Click);
             // 
             // menuListBox
@@ -844,10 +844,10 @@
             this.menuListBox.FormattingEnabled = true;
             this.menuListBox.ItemHeight = 40;
             this.menuListBox.Items.AddRange(new object[] {
-            "Ayuda",
+            "Help",
             "Editor",
-            "Autoguardado",
-            "Inicio",
+            "Autosave",
+            "Startup",
             "GIF"});
             this.menuListBox.Location = new System.Drawing.Point(0, 0);
             this.menuListBox.Name = "menuListBox";
@@ -871,7 +871,7 @@
             this.MinimumSize = new System.Drawing.Size(550, 410);
             this.Name = "AdvancedSettingsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ajustes avanzados";
+            this.Text = "Advanced Settings";
             this.Load += new System.EventHandler(this.AdvancedSettingsForm_Load_1);
             this.autosaveP.ResumeLayout(false);
             this.autosaveP.PerformLayout();

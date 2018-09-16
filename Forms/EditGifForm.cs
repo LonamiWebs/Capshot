@@ -65,7 +65,7 @@ namespace Capshot
 
             // start saving
             string tmpText = Text;
-            Text = "Guardando...";
+            Text = "Saving...";
             Cursor = Cursors.WaitCursor;
             Enabled = false;
             progressBar.Visible = true;
@@ -99,7 +99,7 @@ namespace Capshot
             if (value > progressBar.Maximum)
                 value = progressBar.Maximum;
 
-            Text = "Guardando " + progress.ToString("P") + "...";
+            Text = "Saving " + progress.ToString("P") + "...";
             progressBar.Value = value;
         }
 

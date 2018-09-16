@@ -70,7 +70,7 @@ namespace Capshot
                     "Capturas de pantalla") },
 
                 // Autosave format
-                { "autosaveFormat", "Captura {dia}-{mes}-{año}_{hora}-{minuto}-{segundo}" },
+                { "autosaveFormat", "Screenshot_{day}-{month}-{year}_{hour}-{minute}-{second}" },
                 { "autosaveExtension", ".png" },
 
                 // Start minimized?

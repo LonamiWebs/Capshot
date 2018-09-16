@@ -87,7 +87,7 @@
             this.clipboardTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.clipboardTSB.Name = "clipboardTSB";
             this.clipboardTSB.Size = new System.Drawing.Size(28, 28);
-            this.clipboardTSB.ToolTipText = "Copiar al portapapeles (Ctrl+C)";
+            this.clipboardTSB.ToolTipText = "Copy to clipboard (Ctrl+C)";
             this.clipboardTSB.Click += new System.EventHandler(this.clipboardTSB_Click);
             // 
             // saveTSB
@@ -97,7 +97,7 @@
             this.saveTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveTSB.Name = "saveTSB";
             this.saveTSB.Size = new System.Drawing.Size(28, 28);
-            this.saveTSB.ToolTipText = "Guardar automáticamente (Ctrl+S)";
+            this.saveTSB.ToolTipText = "Save (Ctrl+S)";
             this.saveTSB.Click += new System.EventHandler(this.saveTSB_Click);
             // 
             // saveAsTSB
@@ -107,7 +107,7 @@
             this.saveAsTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveAsTSB.Name = "saveAsTSB";
             this.saveAsTSB.Size = new System.Drawing.Size(28, 28);
-            this.saveAsTSB.ToolTipText = "Guardar en un directorio elegido (Ctrl+Shift+S)";
+            this.saveAsTSB.ToolTipText = "Save as (Ctrl+Shift+S)";
             this.saveAsTSB.Click += new System.EventHandler(this.saveAsTSB_Click);
             // 
             // tss1
@@ -122,7 +122,7 @@
             this.textTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.textTSB.Name = "textTSB";
             this.textTSB.Size = new System.Drawing.Size(28, 28);
-            this.textTSB.ToolTipText = "Añadir texto";
+            this.textTSB.ToolTipText = "Add text";
             this.textTSB.Click += new System.EventHandler(this.textTSB_Click);
             // 
             // resizeTSB
@@ -132,7 +132,7 @@
             this.resizeTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.resizeTSB.Name = "resizeTSB";
             this.resizeTSB.Size = new System.Drawing.Size(28, 28);
-            this.resizeTSB.ToolTipText = "Cambiar tamaño";
+            this.resizeTSB.ToolTipText = "Change size";
             this.resizeTSB.Click += new System.EventHandler(this.resizeTSB_Click);
             // 
             // rotateLeftTSB
@@ -142,7 +142,7 @@
             this.rotateLeftTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.rotateLeftTSB.Name = "rotateLeftTSB";
             this.rotateLeftTSB.Size = new System.Drawing.Size(28, 28);
-            this.rotateLeftTSB.ToolTipText = "Rotar imagen hacia la izquierda";
+            this.rotateLeftTSB.ToolTipText = "Rotate left";
             this.rotateLeftTSB.Click += new System.EventHandler(this.rotateLeftTSB_Click);
             // 
             // rotateRight
@@ -152,7 +152,7 @@
             this.rotateRight.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.rotateRight.Name = "rotateRight";
             this.rotateRight.Size = new System.Drawing.Size(28, 28);
-            this.rotateRight.ToolTipText = "Rotar imagen hacia la derecha";
+            this.rotateRight.ToolTipText = "Rotate right";
             this.rotateRight.Click += new System.EventHandler(this.rotateRight_Click);
             // 
             // mirrorTSB
@@ -162,7 +162,7 @@
             this.mirrorTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.mirrorTSB.Name = "mirrorTSB";
             this.mirrorTSB.Size = new System.Drawing.Size(28, 28);
-            this.mirrorTSB.ToolTipText = "Espejar imagen";
+            this.mirrorTSB.ToolTipText = "Mirror";
             this.mirrorTSB.Click += new System.EventHandler(this.mirrorTSB_Click);
             // 
             // tss2
@@ -178,7 +178,7 @@
             this.undoTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.undoTSB.Name = "undoTSB";
             this.undoTSB.Size = new System.Drawing.Size(28, 28);
-            this.undoTSB.ToolTipText = "Deshacer paso (Ctrl+Z)";
+            this.undoTSB.ToolTipText = "Undo (Ctrl+Z)";
             this.undoTSB.Click += new System.EventHandler(this.undoTSB_Click);
             // 
             // redoTSB
@@ -189,7 +189,7 @@
             this.redoTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.redoTSB.Name = "redoTSB";
             this.redoTSB.Size = new System.Drawing.Size(28, 28);
-            this.redoTSB.ToolTipText = "Rehacer paso (Ctrl+Y)";
+            this.redoTSB.ToolTipText = "Redo (Ctrl+Y)";
             this.redoTSB.Click += new System.EventHandler(this.redoTSB_Click);
             // 
             // clearTSB
@@ -200,7 +200,7 @@
             this.clearTSB.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.clearTSB.Name = "clearTSB";
             this.clearTSB.Size = new System.Drawing.Size(28, 28);
-            this.clearTSB.ToolTipText = "Limpiar la imagen";
+            this.clearTSB.ToolTipText = "Clear";
             this.clearTSB.Click += new System.EventHandler(this.clearTSB_Click);
             // 
             // toolsTS

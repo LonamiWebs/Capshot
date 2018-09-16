@@ -107,7 +107,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ColorPreviewForm";
-            this.Text = "Color seleccionado";
+            this.Text = "Selected colour";
             this.ResumeLayout(false);
             this.PerformLayout();
 

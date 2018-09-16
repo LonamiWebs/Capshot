@@ -25,13 +25,13 @@ namespace Capshot
 
         static readonly SaveFileDialog sfd = new SaveFileDialog
         {
-            Title = "Elija donde guardar la captura",
-            Filter = "Imagen PNG|*.png|Imagen JPG|*.jpg|Imagen GIF|*.gif"
+            Title = "Choose save file path",
+            Filter = "PNG image|*.png|JPG image|*.jpg|GIF image|*.gif"
         };
 
         static readonly SaveFileDialog gifSfd = new SaveFileDialog {
-            Title = "Elija donde guardar la grabación",
-            Filter = "Imagen GIF animada|*.gif"
+            Title = "Choose gif save file path",
+            Filter = "Animated GIF image|*.gif"
         };
 
         public static string SelectedFile;
@@ -158,10 +158,10 @@ namespace Capshot
                     {
                         img.Save(sfd.FileName, GetImageFormat(Path.GetExtension(sfd.FileName)));
                         img.Dispose();
-                        return "Archivo guardado correctamente";
+                        return "File saved successfully";
                     }
                     img.Dispose();
-                    return "El archivo no se ha guardado";
+                    return "Failed to save file";
 
                 case Action.Edit:
                     new EditForm(img).Show();
@@ -258,19 +258,19 @@ namespace Capshot
 
             // Use ? and * as temporal values
             autosaveFormat = autosaveFormat
-                .Replace("{dia}", "?0:dd*")
-                .Replace("{nombredia}", "?0:dddd*")
-                .Replace("{mes}", "?0:MM*")
-                .Replace("{nombremes}", "?0:MMMM*")
-                .Replace("{año}", "?0:yyyy*")
-                .Replace("{hora}", "?0:HH*")
-                .Replace("{minuto}", "?0:mm*")
-                .Replace("{segundo}", "?0:ss*")
+                .Replace("{dia}", "?0:dd*").Replace("{day}", "?0:dd*")
+                .Replace("{nombredia}", "?0:dddd*").Replace("{dayname}", "?0:dddd*")
+                .Replace("{mes}", "?0:MM*").Replace("{month}", "?0:MM*")
+                .Replace("{nombremes}", "?0:MMMM*").Replace("{monthname}", "?0:MMMM*")
+                .Replace("{año}", "?0:yyyy*").Replace("{year}", "?0:yyyy*")
+                .Replace("{hora}", "?0:HH*").Replace("{hour}", "?0:HH*")
+                .Replace("{minuto}", "?0:mm*").Replace("{minute}", "?0:mm*")
+                .Replace("{segundo}", "?0:ss*").Replace("{second}", "?0:ss*")
                 .Replace("{", "").Replace("?", "{")
                 .Replace("}", "").Replace("*", "}");
 
             if (autosaveFormat.Length == 0)
-                return "Captura";
+                return "Screenshot";
 
             return string.Format(autosaveFormat, DateTime.Now);
 

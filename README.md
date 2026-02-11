@@ -1,3 +1,7 @@
+Moved to https://codeberg.org/Lonami/Capshot. The GitHub repository may be deleted in the future.
+
+---
+
 # Capshot
 Capshot is a C# program which interops with the Windows API in order to take
 screenshots, as well as being able to record gifs.
